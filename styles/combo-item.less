@@ -1,0 +1,30 @@
+@cb-item: ~'.combo-item';
+
+@{cb-item} {
+  .user-select(none);
+  position: relative;
+  padding: 6px 8px 6px 22px;
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 20px;
+  color: darken(@c-theme-gray-blue-light, 25%);
+
+  &:hover {
+    background-color: #f4f7fa;
+    color: darken(@c-theme-gray-blue-light, 45%);
+  }
+
+  &_selected_true {
+    background-color: fade(#f4f7fa, 15%);
+
+    &:before {
+      .absolute-top-left(50%, 8px);
+      .size(7px);
+      .border-radius(50%);
+      content: '';
+      background-color: #00d4b4;
+      margin-top: -4.5px;
+    }
+  }
+}

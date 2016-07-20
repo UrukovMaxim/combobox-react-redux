@@ -1,0 +1,32 @@
+@import (reference) "./mixins";
+@import (reference) "./mymixins";
+@import (reference) "./variables";
+
+@import "./combo-item";
+@import "./flight";
+@import "./flights";
+@import "./combo";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.root {
+  min-height: 100%;
+  width: 100%;
+  background-color: #eaeef5;
+  display: inline-block;
+}
+
+.app {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  &__combo {
+    width: 100%;
+  }
+}
+

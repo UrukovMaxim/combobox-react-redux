@@ -1,0 +1,39 @@
+@fl: ~'.flight';
+
+@{fl} {
+  .border-radius(2px);
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+
+  &:hover {
+    .scale(1.04);
+    .transition(all 0.1s);
+    .box-shadow(0 2px 6px 0 fade(#252730, 20%));
+  }
+
+  &__direction {
+    color: #5B6470;
+    font-size: 16px;
+    margin-bottom: 6px;
+
+    &-value {
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+
+  &__arrival,
+  &__departure {
+    color: #323640;
+    font-size: 16px;
+    margin: 1px 0;
+  }
+
+  &__carrier {
+    font-size: 14px;
+    color: #949FB1;
+    margin-top: 6px;
+  }
+}
+
